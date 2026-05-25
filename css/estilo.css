@@ -25,13 +25,15 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 250px;
+    width: 280px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: ease;
+    
+    transition: width 0.3s, height 0.3s; /*<-- gera uma animação ao aumentar ou diminuir o tamanho do elemento */
+
+    transition-timing-function: ease;/*<-- suaviza a nimação */
 }
 div#imagem{
     display: block;
@@ -42,4 +44,12 @@ div#imagem{
 section#login div#formulario{
     display: block;
     padding: 20px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+div#formulario > p{
+    font-size: 0.8em;
 }
